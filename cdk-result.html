@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CDK充值</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container" style="max-width: 600px;">
+    <h3 class="text-danger">充值结果查询</h3>
+    <hr>
+    <div class="form-horizontal">
+        <div class="form-group">
+            <label for="inputEmail3" class="col-sm-4 control-label">CDK码</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="inputEmail3" placeholder="请输入您的CDK码">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword3" class="col-sm-4 control-label">验证码</label>
+            <div class="col-sm-8 form-inline">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="请输入验证码">
+                <a href="javascript:void(0)"><img src="img/getcode.jpg" alt=""></a>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-4 col-sm-8">
+                如兑换出现问题请联系客服：94856194685156
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-4 col-sm-8">
+                <button type="submit" class="btn btn-danger" data-toggle="modal" data-target="#resultModal" style="min-width: 100px;">查询</button>
+                <a href="cdk-exchange.html" class="btn btn-default">返回充值页面</a>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-8">
+                <p>注：<br>
+                    充值失败时，如果失败原因为以下几种，请重新提交充值。<br>
+                    1、因账号或密码输入错误导致充值失败。<br>
+                    2、因好友链接输入错误导致充值失败。<br>
+                    3、因输入的CDK码错误导致充值失败。</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--充值结果-->
+<div class="modal" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">充值结果</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-sm-4 text-right">订单状态</div>
+                        <div class="col-sm-8">
+                            <span class="text-danger">失败</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4 text-right">CDK码</div>
+                        <div class="col-sm-8">
+                            87484sda4s51d1
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4 text-right">充值时间</div>
+                        <div class="col-sm-8">
+                            2018-05-08 24:15:16
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4 text-right">充值账号</div>
+                        <div class="col-sm-8">
+                            1423412341
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4 text-right">友情链接</div>
+                        <div class="col-sm-8">
+                            -
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4 text-right">客服电话</div>
+                        <div class="col-sm-8">
+                            此处显示售卖商户的客服电话
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4 text-right">备注</div>
+                        <div class="col-sm-8">
+                            orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4 text-right">注</div>
+                        <div class="col-sm-8">
+                            注：<br>
+                                充值失败时，如果失败原因为以下几种，请重新提交充值。<br>
+                                1、因账号或密码输入错误导致充值失败。<br>
+                                2、因好友链接输入错误导致充值失败。<br>
+                                3、因输入的CDK码错误导致充值失败。
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
